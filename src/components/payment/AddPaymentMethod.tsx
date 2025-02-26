@@ -62,30 +62,30 @@ function CardForm() {
   return (
     <>
       {/* Test Cards Information Box */}
-      <div className="mb-6 bg-blue-50 p-4 rounded-lg">
-        <h3 className="text-sm font-medium text-blue-800 mb-2">Test Card Details</h3>
-        <div className="text-sm text-blue-700 space-y-2">
+      <div className="mb-6 bg-blue-50 p-4 rounded-lg dark:bg-black dark:gray-50 ">
+        <h3 className="text-sm font-medium text-blue-800 mb-2 dark:text-blue-500">Test Card Details</h3>
+        <div className="text-sm text-blue-700 space-y-2 dark:text-blue-500">
           <p className="font-medium">Use these test card numbers:</p>
           
-          <div className="bg-white p-3 rounded border border-blue-100">
-            <p className="font-medium text-blue-900 mb-1">Successful Payments:</p>
-            <ul className="list-disc list-inside space-y-1 text-blue-700">
+          <div className="bg-white p-3 rounded border border-gray-50 dark:bg-black dark:gray-50">
+            <p className="font-medium text-blue-900 dark:text-blue-500 mb-1">Successful Payments:</p>
+            <ul className="list-disc list-inside space-y-1 text-blue-700 dark:text-blue-500">
               <li>Visa: 4242 4242 4242 4242</li>
               <li>Mastercard: 5555 5555 5555 4444</li>
             </ul>
           </div>
 
-          <div className="bg-white p-3 rounded border border-blue-100">
-            <p className="font-medium text-blue-900 mb-1">Special Scenarios:</p>
-            <ul className="list-disc list-inside space-y-1 text-blue-700">
+          <div className="bg-white p-3 rounded border border-blue-50 dark:bg-black dark:gray-50">
+            <p className="font-medium text-blue-900 mb-1 dark:text-blue-500">Special Scenarios:</p>
+            <ul className="list-disc list-inside space-y-1 text-blue-700 dark:text-blue-500">
               <li>Authentication Required: 4000 0000 0000 3220</li>
               <li>Declined Payment: 4000 0000 0000 0002</li>
             </ul>
           </div>
 
-          <div className="bg-white p-3 rounded border border-blue-100">
-            <p className="font-medium text-blue-900 mb-1">For all cards, use:</p>
-            <ul className="list-disc list-inside space-y-1 text-blue-700">
+          <div className="bg-white p-3 rounded border border-blue-50 dark:bg-black dark:gray-50">
+            <p className="font-medium text-blue-900 mb-1 dark:text-blue-500">For all cards, use:</p>
+            <ul className="list-disc list-inside space-y-1 text-blue-700 dark:text-blue-500">
               <li>Expiry Date: Any future date (MM/YY)</li>
               <li>CVC: Any 3 digits</li>
               <li>ZIP: Any 5 digits</li>
@@ -142,7 +142,7 @@ function CardForm() {
 
 export default function AddPaymentMethod() {
   return (
-    <div className="bg-white rounded-lg shadow p-6">
+    <div className="bg-white rounded-lg shadow p-6 dark:bg-black dark:gray-50">
       <h2 className="text-xl font-semibold mb-4">Add New Payment Method</h2>
       <Elements stripe={stripePromise}>
         <CardForm />

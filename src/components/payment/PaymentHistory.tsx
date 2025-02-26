@@ -47,7 +47,7 @@ export default function PaymentHistoryComponent() {
   }
 
   return (
-    <div className="bg-white rounded-lg shadow p-6">
+    <div className="bg-white rounded-lg shadow p-6 dark:bg-black dark:gray-50">
       <h2 className="text-xl font-semibold mb-4">Payment History</h2>
 
       <div className="space-y-4">
@@ -59,7 +59,7 @@ export default function PaymentHistoryComponent() {
             <div className="flex justify-between items-start mb-2">
               <div>
                 <p className="font-medium">₹{payment.amount}</p>
-                <p className="text-sm text-gray-500">
+                <p className="text-sm text-gray-400">
                   {formatDate(payment.date)}
                 </p>
               </div>
@@ -76,7 +76,7 @@ export default function PaymentHistoryComponent() {
               </span>
             </div>
 
-            <div className="text-sm text-gray-600">
+            <div className="text-sm text-gray-500">
               <p>Payment Method: {payment.paymentMethod}</p>
               <p>Ride ID: {payment.rideId}</p>
             </div>

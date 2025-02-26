@@ -2,7 +2,7 @@
 
 export default function AccountSettings() {
   return (
-    <div className="bg-white rounded-lg shadow p-6">
+    <div className="bg-white rounded-lg shadow p-6 dark:bg-black dark:text-gray-50">
       <h2 className="text-xl font-semibold mb-6">Account Settings</h2>
       
       <div className="space-y-6">
@@ -13,7 +13,7 @@ export default function AccountSettings() {
               <input type="checkbox" className="rounded" defaultChecked />
               <span className="ml-2">Email notifications</span>
             </label>
-            <label className="flex items-center">
+            <label className="flex items-center"> 
               <input type="checkbox" className="rounded" defaultChecked />
               <span className="ml-2">SMS notifications</span>
             </label>

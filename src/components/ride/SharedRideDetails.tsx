@@ -30,11 +30,11 @@ export default function SharedRideDetails({ sharedRide }: SharedRideDetailsProps
   }
 
   return (
-    <div className="bg-white rounded-lg p-4">
-      <div className="flex justify-between items-start mb-4">
+    <div className="bg-white rounded-lg p-4 dark:bg-black dark:text-gray-50">
+      <div className="flex justify-between items-start mb-4 dark:bg-black dark:text-gray-50 ">
         <div>
-          <h3 className="text-lg font-semibold">Ride Details</h3>
-          <p className="text-sm text-gray-500">
+          <h3 className="text-lg font-semibold ">Ride Details</h3>
+          <p className="text-sm text-gray-500  ">
             Created on {new Date().toLocaleDateString()}
           </p>
         </div>
@@ -47,9 +47,9 @@ export default function SharedRideDetails({ sharedRide }: SharedRideDetailsProps
         </span>
       </div>
 
-      <div className="space-y-4">
+      <div className="space-y-4 ">
         {/* Sharing Code */}
-        <div className="bg-gray-50 p-3 rounded-lg">
+        <div className="bg-gray-50 p-3 rounded-lg dark:bg-black dark:text-gray-50">
           <p className="text-sm text-gray-600">Sharing Code</p>
           <div className="flex items-center space-x-2">
             <code className="text-lg font-mono">{sharedRide.sharingCode}</code>
@@ -66,7 +66,7 @@ export default function SharedRideDetails({ sharedRide }: SharedRideDetailsProps
         </div>
 
         {/* Fare Details */}
-        <div className="grid grid-cols-3 gap-4 bg-gray-50 p-3 rounded-lg">
+        <div className="grid grid-cols-3 gap-4 bg-gray-50 p-3 rounded-lg dark:bg-gray-900 dark:text-gray-50">
           <div>
             <p className="text-sm text-gray-600">Total Fare</p>
             <p className="text-lg font-semibold">₹{sharedRide.totalFare}</p>
@@ -101,7 +101,7 @@ export default function SharedRideDetails({ sharedRide }: SharedRideDetailsProps
               .map((passenger) => (
                 <div
                   key={passenger.id}
-                  className="flex items-center justify-between p-2 bg-gray-50 rounded-lg"
+                  className="flex items-center justify-between p-2 bg-gray-50 dark:bg-gray-900 dark:text-gray-50 rounded-lg"
                 >
                   <div>
                     <p className="font-medium">{passenger.name}</p>
@@ -127,7 +127,7 @@ export default function SharedRideDetails({ sharedRide }: SharedRideDetailsProps
               ))}
             
             {!isExpanded && sharedRide.passengers.length > 2 && (
-              <p className="text-sm text-gray-500 text-center">
+              <p className="text-sm text-gray-500 text-center ">
                 +{sharedRide.passengers.length - 2} more passengers
               </p>
             )}
@@ -135,7 +135,7 @@ export default function SharedRideDetails({ sharedRide }: SharedRideDetailsProps
         </div>
 
         {/* Actions */}
-        <div className="flex space-x-3 pt-2">
+        <div className="flex space-x-3 pt-2 ">
           <button
             onClick={() => {/* Handle share again */}}
             className="flex-1 px-4 py-2 text-sm border border-blue-500 text-blue-500 rounded-md hover:bg-blue-50"

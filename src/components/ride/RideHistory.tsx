@@ -39,7 +39,7 @@ export default function RideHistory() {
           ))
         ) : (
           <div className="text-center py-10">
-            <p className="text-gray-500">
+            <p className="text-gray-500 ">
               {filterStatus === 'all' 
                 ? 'No ride history found'
                 : `No ${filterStatus} rides found`}

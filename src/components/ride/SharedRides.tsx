@@ -85,7 +85,7 @@ export default function SharedRides() {
   const [activeRide, setActiveRide] = useState<string | null>(null)
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 dark:bg-black dark:text-gray-50">
       {sharedRides.map((sharedRide) => (
         <div 
           key={sharedRide.id} 
@@ -93,12 +93,12 @@ export default function SharedRides() {
             ${activeRide === sharedRide.id ? 'ring-2 ring-blue-500' : ''}`}
         >
           <div 
-            className="p-4 cursor-pointer hover:bg-gray-50"
+            className="p-4 cursor-pointer hover:bg-gray-50 dark:bg-black dark:text-gray-50 border-black"
             onClick={() => setActiveRide(
               activeRide === sharedRide.id ? null : sharedRide.id
             )}
           >
-            <div className="flex justify-between items-start mb-2">
+            <div className="flex justify-between items-start mb-2 dark:bg-black dark:text-gray-50">
               <div>
                 <h3 className="font-semibold">Ride #{sharedRide.rideId}</h3>
                 <p className="text-sm text-gray-500">
@@ -120,17 +120,17 @@ export default function SharedRides() {
 
             <div className="flex justify-between items-center text-sm">
               <div>
-                <p className="text-gray-600">Total Fare</p>
+                <p className="text-gray-600 dark:bg-black dark:text-gray-50">Total Fare</p>
                 <p className="font-semibold">₹{sharedRide.totalFare}</p>
               </div>
               <div>
-                <p className="text-gray-600">Your Share</p>
+                <p className="text-gray-600 dark:bg-black dark:text-gray-50">Your Share</p>
                 <p className="font-semibold text-blue-600">
                   ₹{sharedRide.splitAmount}
                 </p>
               </div>
               <div>
-                <p className="text-gray-600">Code</p>
+                <p className="text-gray-600 ">Code</p>
                 <p className="font-mono">{sharedRide.sharingCode}</p>
               </div>
             </div>
@@ -149,7 +149,7 @@ export default function SharedRides() {
 
       {sharedRides.length === 0 && (
         <div className="text-center py-8">
-          <p className="text-gray-500">No shared rides found</p>
+          <p className="text-gray-500 dark:bg-black dark:text-gray-50">No shared rides found</p>
           <p className="text-sm text-gray-400">
             Share a ride to split the fare with friends
           </p>

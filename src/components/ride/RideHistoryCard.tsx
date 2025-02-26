@@ -33,10 +33,10 @@ export default function RideHistoryCard({ ride }: RideHistoryCardProps) {
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-md p-4 mb-4 hover:shadow-lg transition-shadow">
+    <div className="bg-white rounded-lg shadow-md p-4 mb-4 hover:shadow-lg transition-shadow dark:bg-black dark:text-gray-50">
       <div className="flex justify-between items-start mb-3">
         <div>
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-gray-500 dark:text-gray-50">
             {formatDate(ride.date)}
           </p>
           <h3 className="font-semibold capitalize">{ride.rideType} Ride</h3>
@@ -55,16 +55,16 @@ export default function RideHistoryCard({ ride }: RideHistoryCardProps) {
       <div className="space-y-2">
         <div className="flex items-start">
           <div className="w-4 h-4 mt-1 rounded-full bg-blue-500 shrink-0" />
-          <p className="ml-3 text-gray-600">{ride.pickup}</p>
+          <p className="ml-3 text-gray-600 dark:text-gray-50">{ride.pickup}</p>
         </div>
         <div className="flex items-start">
           <div className="w-4 h-4 mt-1 rounded-full bg-green-500 shrink-0" />
-          <p className="ml-3 text-gray-600">{ride.destination}</p>
+          <p className="ml-3 text-gray-600 dark:text-gray-50">{ride.destination}</p>
         </div>
       </div>
 
       <div className="flex justify-between items-center mt-4 pt-3 border-t">
-        <div className="text-gray-600">
+        <div className="text-gray-600 dark:text-gray-50">
           <span className="font-medium">Driver: </span>
           {ride.driverName}
         </div>

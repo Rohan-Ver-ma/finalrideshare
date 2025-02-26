@@ -50,7 +50,7 @@ export default function ProfileManager() {
   }
 
   return (
-    <div className="bg-white shadow rounded-lg p-6">
+    <div className="bg-white shadow rounded-lg p-6 dark:bg-black">
       <h2 className="text-xl font-semibold mb-4">Profile Management</h2>
       
       {message && (
@@ -67,19 +67,19 @@ export default function ProfileManager() {
         <div className="space-y-4">
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <p className="text-gray-600">First Name</p>
+              <p className="text-gray-500">First Name</p>
               <p className="font-medium">{user?.firstName}</p>
             </div>
             <div>
-              <p className="text-gray-600">Last Name</p>
+              <p className="text-gray-500">Last Name</p>
               <p className="font-medium">{user?.lastName}</p>
             </div>
             <div>
-              <p className="text-gray-600">Email</p>
+              <p className="text-gray-500">Email</p>
               <p className="font-medium">{user?.email}</p>
             </div>
             <div>
-              <p className="text-gray-600">Phone</p>
+              <p className="text-gray-500">Phone</p>
               <p className="font-medium">{user?.phone}</p>
             </div>
           </div>

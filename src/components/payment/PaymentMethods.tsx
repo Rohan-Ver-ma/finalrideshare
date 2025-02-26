@@ -69,7 +69,7 @@ export default function PaymentMethods() {
   }
 
   return (
-    <div className="bg-white rounded-lg shadow p-6">
+    <div className="bg-white rounded-lg shadow p-6 dark:bg-black dark:gray-50">
       <h2 className="text-xl font-semibold mb-4">Saved Payment Methods</h2>
       
       <div className="space-y-4">

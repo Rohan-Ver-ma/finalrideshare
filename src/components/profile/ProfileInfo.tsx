@@ -22,7 +22,7 @@ export default function ProfileInfo() {
   }
 
   return (
-    <div className="bg-white rounded-lg shadow p-6">
+    <div className="bg-white rounded-lg shadow p-6 dark:bg-black dark:text-gray-50">
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-xl font-semibold">Personal Information</h2>
         <button
@@ -36,7 +36,7 @@ export default function ProfileInfo() {
       {isEditing ? (
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label className="block text-sm font-medium text-gray-700">Name</label>
+            <label className="block text-sm font-medium text-gray-700 dark:bg-black dark:text-gray-50">Name</label>
             <input
               type="text"
               value={profile.name}

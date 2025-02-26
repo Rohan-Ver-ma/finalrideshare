@@ -25,14 +25,14 @@ export default function SplitFare({ sharedRide }: SplitFareProps) {
   }
 
   return (
-    <div className="bg-white rounded-lg p-4 border">
+    <div className="bg-white rounded-lg p-4 border dark:bg-black dark:text-gray-50">
       <h3 className="text-lg font-semibold mb-4">Pay Your Share</h3>
 
       <div className="space-y-4">
-        <div className="bg-blue-50 p-4 rounded-lg">
+        <div className="bg-blue-50 p-4 rounded-lg dark:bg-gray-900 dark:text-gray-50">
           <div className="flex justify-between items-center">
             <div>
-              <p className="text-sm text-gray-600">Your Share</p>
+              <p className="text-sm text-gray-600 ">Your Share</p>
               <p className="text-2xl font-semibold">₹{sharedRide.splitAmount}</p>
             </div>
             <div className="text-right">
