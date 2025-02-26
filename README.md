@@ -1,6 +1,6 @@
-#  DevSpectrum – One Stop for your Crypto Updates & Tech Trends
+#  RideShare – Your Ride Your Way
 
-A modern, developer-first news platform covering everything from open-source tools to blockchain trends. Whether you're a coder, investor, or tech enthusiast, Devspectrum has something for you.
+Experience seamless transportation at your fingertips. Book a ride and reach your destination with comfort and style.
 
 [![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js&logoColor=white)](https://nextjs.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-blue)](https://tailwindcss.com/)
