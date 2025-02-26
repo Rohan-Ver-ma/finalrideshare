@@ -21,7 +21,10 @@
     "@stripe/stripe-js": "^5.7.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "cors": "^2.8.5",
     "date-fns": "^4.1.0",
+    "express": "^4.21.2",
+    "framer-motion": "^12.4.7",
     "lucide-react": "^0.475.0",
     "next": "15.1.7",
     "next-themes": "^0.4.4",
@@ -30,7 +33,12 @@
     "react-google-autocomplete": "^2.7.4",
     "react-router-dom": "^7.2.0",
     "react-toastify": "^11.0.5",
+<<<<<<< HEAD
     "sonner": "^2.0.1",
+=======
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+>>>>>>> d8b67f27a09ac8e83c8f4504852059881d5a690f
     "tailwind-merge": "^3.0.2",
     "tailwindcss-animate": "^1.0.7",
     "use-places-autocomplete": "^4.0.1"
