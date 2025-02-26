@@ -18,21 +18,66 @@ const mockSharedRides: SharedRide[] = [
     passengers: [
       {
         id: '1',
-        name: 'John Doe',
+        name: 'Isha Singh',
         phone: '9876543210',
+        status: 'accepted',
+        paymentStatus: 'completed'
+      },
+      {
+        id: '2',
+        name: 'Tanaya Burle',
+        phone: '9876543211',
         status: 'pending',
         paymentStatus: 'pending'
       },
       {
-        id: '2',
-        name: 'Jane Smith',
+        id: '3',
+        name: 'John',
         phone: '9876543211',
         status: 'accepted',
         paymentStatus: 'completed'
       }
     ]
   },
-  // Add more mock rides as needed
+
+  {
+    id: '2',
+    rideId: 'RIDE002',
+    sharingCode: 'SHARE415',
+    totalFare: 2800,
+    numberOfPassengers: 4,
+    splitAmount: 700,
+    status: 'accepted',
+    passengers: [
+      {
+        id: '1',
+        name: 'Tanaya Burle',
+        phone: '9876543211',
+        status: 'accepted',
+        paymentStatus: 'completed'
+      },
+      {
+        id: '2',
+        name: 'Lohan Verma',
+        phone: '9116543211',
+        status: 'accepted',
+        paymentStatus: 'completed'
+      },
+      {
+        id: '3',
+        name: 'Yash Rana',
+        phone: '9116577211',
+        status: 'accepted',
+        paymentStatus: 'completed'
+      },{
+        id: '4',
+        name: 'Likhit',
+        phone: '9116548080',
+        status: 'accepted',
+        paymentStatus: 'completed'
+      }
+    ]
+  }
 ]
 
 export default function SharedRides() {
