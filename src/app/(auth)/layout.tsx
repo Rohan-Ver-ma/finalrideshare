@@ -5,7 +5,7 @@ export default function AuthLayout({
 }) {
   return (
     <div className="min-h-screen bg-slate-100">
-      <div className="container mx-auto py-10">
+      <div className="container mx-auto   ">
         {children}
       </div>
     </div>
