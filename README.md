@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+#  DevSpectrum – One Stop for your Crypto Updates & Tech Trends
 
-## Getting Started
+A modern, developer-first news platform covering everything from open-source tools to blockchain trends. Whether you're a coder, investor, or tech enthusiast, Devspectrum has something for you.
 
-First, run the development server:
+[![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js&logoColor=white)](https://nextjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-blue)](https://tailwindcss.com/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)](https://www.typescriptlang.org/)
+[![shadcn/ui](https://img.shields.io/badge/shadcn/ui-latest-black)](https://ui.shadcn.com/)
 
+<img src="public/sample1.png" alt=" landing page image" />
+
+<img src="public/sample2.png" alt=" landing page image" />
+
+<img src="public/sample3.png" alt=" landing page image" />
+
+<img src="public/sample4.png" alt=" landing page image" />
+
+## 🚀 Quick Start
+
+1. Install dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Start the development server:
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Open [http://localhost:3000](http://localhost:3000) to view your site
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## ✨ Features
 
-To learn more about Next.js, take a look at the following resources:
+- 🎨 **Modern Design System**: Built on top of shadcn/ui, offering a clean and professional look
+- 📱 **Fully Responsive**: All components work perfectly across desktop, tablet, and mobile devices
+- ⚡ **Performance Optimized**: Leverages React.js features for optimal loading speed
+- 🌗 **Dark Mode Support**: Seamless light/dark mode switching with system preference detection
+- 🎯 **SEO Optimized**: Built with best practices for search engine visibility
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛠️ Tech Stack
 
-## Deploy on Vercel
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **UI Components**: [shadcn/ui](https://ui.shadcn.com/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Animations**: CSS animations and transitions
+- **Icons**: Lucide icons
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<p align="center">
+  <a href="/">Website</a> 
+</p>

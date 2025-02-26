@@ -79,9 +79,8 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Google Maps Embed */}
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-      <Image className="object-cover object-center rounded" alt="hero" src="/taxi3.png"  width={600} height={600} />
+      <Image className="object-cover object-center rounded" alt="hero" src="/landingPhoto.png"  width={600} height={600} />
     </div>
         </div>
       </section>
