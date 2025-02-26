@@ -63,7 +63,7 @@ const LoginForm = () => {
   };
 
   return (
-    <div className="min-h-screen w-full flex items-center justify-center p-4   bg-gradient-to-br from-background via-background to-muted/20 overflow-hidden">
+    <div className="min-h-screen w-full flex items-center justify-center p-4 bg-white  dark:bg-gradient-to-br from-background via-background to-muted/20 overflow-hidden">
       <div className="w-full max-w-sm mx-auto space-y-6 animate-fade-in">
         <div className="space-y-2 text-center">
           <h1 className="text-4xl font-bold tracking-tight bg-gradient-to-r from-sky-400 to-sky-600 bg-clip-text text-transparent">
@@ -148,15 +148,15 @@ const LoginForm = () => {
           <div className="space-y-4">
             <div className="relative">
               <div className="absolute inset-0 flex items-center">
-                <span className="w-full border-t border-white/10" />
+                <span className="w-full border-t border-black/10 dark:border-white/15" />
               </div>
               <div className="relative flex justify-center text-xs uppercase">
-                <span className="bg-background px-2 text-muted-foreground">
+                <span className=" px-2 text-muted-foreground dark:text-gray-300">
                   Test Credentials
                 </span>
               </div>
             </div>
-            <div className="rounded-lg border border-white/10 bg-white/5 p-4">
+            <div className="rounded-lg border border-black/10 dark:border-white/10 bg-white/5 p-4">
               <div className="space-y-1 text-sm text-muted-foreground">
                 <p>Username: <span className="text-foreground">michaelw</span></p>
                 <p>Password: <span className="text-foreground">michaelwpass</span></p>

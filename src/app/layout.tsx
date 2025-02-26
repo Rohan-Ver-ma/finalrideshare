@@ -1,6 +1,8 @@
+
 import './globals.css'
 import { AuthProvider } from '@/context/AuthContext'
 import Header from '@/components/shared/Header'
+import { ThemeProvider } from '@/components/theme-provider'
 
 export default function RootLayout({
   children,
@@ -10,9 +12,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        
         <AuthProvider>
+        <ThemeProvider >
           <Header />
           {children}
+        </ThemeProvider>
         </AuthProvider>
       </body>
     </html>

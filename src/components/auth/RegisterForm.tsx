@@ -62,7 +62,7 @@ const RegisterForm = () => {
     }
   };
   return (
-    <div className="min-h-screen w-full flex items-center justify-center p-4 bg-gradient-to-br from-background via-background to-muted/20 overflow-hidden">
+    <div className="min-h-screen w-full flex items-center justify-center p-4 bg-white dark:bg-gradient-to-br from-background via-background to-muted/20 overflow-hidden">
       <div className="w-full max-w-sm mx-auto space-y-6 animate-fade-in">
         <div className="space-y-2 text-center">
           <h1 className="text-4xl font-bold tracking-tight bg-gradient-to-r from-sky-400 to-sky-600 bg-clip-text text-transparent">
@@ -174,7 +174,7 @@ const RegisterForm = () => {
           <div className="text-center text-sm">
             Already have an account?{" "}
             <a href="/login" className="text-sky-400 hover:text-sky-300 transition-colors">
-              Login in
+              Login Here
             </a>
           </div>
         </div>
