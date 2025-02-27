@@ -185,7 +185,7 @@ export default function Home() {
           </svg>
           <p className="leading-relaxed mb-6 dark:text-neutral-50">This ride-sharing platform has completely changed how I commute! The fares are affordable, the rides are always on time, and the app is super easy to use. I love the seamless experience and the polite drivers!</p>
           <a className="inline-flex items-center">
-            <img alt="testimonial" src="https://i.pravatar.cc/107" className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"/>
+            <Image alt="testimonial" src="https://i.pravatar.cc/107" className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"/>
             <span className="flex-grow flex flex-col pl-4">
               <span className="title-font font-medium text-gray-900 dark:text-neutral-50">Rohan Verma</span>
               <span className="text-gray-500 text-sm dark:text-neutral-50">Software Engineer</span>
@@ -200,7 +200,7 @@ export default function Home() {
           </svg>
           <p className="leading-relaxed mb-6 dark:text-neutral-50">An excellent alternative to traditional cabs! I’ve saved so much money using the ride-share feature, and the cars are always clean and comfortable. Highly recommend it to anyone looking for a hassle-free travel option!</p>
           <a className="inline-flex items-center">
-            <img alt="testimonial" src="https://i.pravatar.cc/106" className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"/>
+            <Image alt="testimonial" src="https://i.pravatar.cc/106" className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"/>
             <span className="flex-grow flex flex-col pl-4">
               <span className="title-font font-medium text-gray-900 dark:text-neutral-50">Rahul Banerjee</span>
               <span className="text-gray-500 text-sm dark:text-neutral-50">Doctor</span>

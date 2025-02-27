@@ -2,6 +2,8 @@
 
 import { useState } from 'react'
 import { UserProfile } from '@/types/profile'
+import Image from "next/image";
+
 
 const mockProfile: UserProfile = {
   id: '1',
@@ -72,8 +74,8 @@ export default function ProfileInfo() {
       ) : (
         <div className="space-y-4">
           <div className="flex items-center space-x-4">
-            <img
-              src={profile.profileImage}
+            <Image
+              src={profile.profileImage || 'https://via.placeholder.com/150'}
               alt={profile.name}
               className="w-20 h-20 rounded-full"
             />
