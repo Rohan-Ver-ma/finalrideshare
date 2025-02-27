@@ -6,7 +6,7 @@ import ProfileManager from '@/components/profile/ProfileManager'
 import RideBooking from '@/components/ride/RideBooking'
 
 export default function DashboardPage() {
-  const { user, logout } = useAuth()
+  const {  logout } = useAuth()
 
   return (
     <ProtectedRoute>

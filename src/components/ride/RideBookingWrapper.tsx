@@ -1,4 +1,4 @@
-'use client'
+  'use client'
 
 import { LoadScript } from '@react-google-maps/api'
 import RideBooking from './RideBooking'

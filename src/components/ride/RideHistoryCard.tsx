@@ -119,7 +119,7 @@ export default function RideHistoryCard({ ride }: RideHistoryCardProps) {
                     onRate={() => setShowFeedback(true)} 
                   />
                   {feedback && (
-                    <p className="text-sm text-gray-500 ml-2">"{feedback}"</p>
+                    <p className="text-sm text-gray-500 ml-2">{feedback}</p>
                   )}
                 </div>
               )}

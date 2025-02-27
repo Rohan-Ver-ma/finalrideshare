@@ -7,7 +7,7 @@ interface FeedbackFormProps {
   onSubmit: (rating: number, comment: string) => void;
 }
 
-export default function FeedbackForm({ rideId, onSubmit }: FeedbackFormProps) {
+export default function FeedbackForm({  onSubmit }: FeedbackFormProps) {
   const [rating, setRating] = useState(0);
   const [comment, setComment] = useState("");
 

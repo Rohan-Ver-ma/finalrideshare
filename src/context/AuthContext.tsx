@@ -4,7 +4,7 @@ import { createContext, useContext, useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
 
 interface AuthContextType {
-  user: any
+  user: string
   isLoading: boolean
   login: (username: string, password: string) => Promise<void>
   logout: () => void
@@ -14,14 +14,15 @@ interface AuthContextType {
 const AuthContext = createContext<AuthContextType | null>(null)
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
-  const router = useRouter()
+  const router = useRouter();
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [user, setUser] = useState<any>(null)
   const [isLoading, setIsLoading] = useState(true)
 
   // Check auth status when component mounts
   useEffect(() => {
     checkAuth()
-  }, [])
+  })
 
   const checkAuth = () => {
     try {
@@ -41,7 +42,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     }
   }
 
-  const login = async (username: string, password: string) => {
+  const login = async (username: string, password: string): Promise<void> => {
     try {
       const response = await fetch('https://dummyjson.com/auth/login', {
         method: 'POST',
@@ -58,12 +59,10 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         localStorage.setItem('user', JSON.stringify(data))
         setUser(data)
         router.push('/dashboard')
-        return true
       }
-      return false
     } catch (error) {
       console.error('Login error:', error)
-      return false
+      return Promise.reject(error)
     }
   }
 

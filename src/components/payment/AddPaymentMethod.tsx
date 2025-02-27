@@ -57,9 +57,10 @@ function CardForm() {
           setSuccess(false) // Reset the success state
         }, 3000)
       }
-    } catch (err: any) {
-      setError(err.message || 'Something went wrong')
-    } finally {
+    } 
+   // catch (err: any) {
+     // setError(err.message || 'Something went wrong')
+    finally {
       setProcessing(false)
     }
   }
