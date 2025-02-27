@@ -4,7 +4,7 @@ import { createContext, useContext, useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
 
 interface AuthContextType {
-  user: string
+  user: string | null
   isLoading: boolean
   login: (username: string, password: string) => Promise<void>
   logout: () => void
@@ -14,15 +14,14 @@ interface AuthContextType {
 const AuthContext = createContext<AuthContextType | null>(null)
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
-  const router = useRouter();
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const router = useRouter()
   const [user, setUser] = useState<any>(null)
   const [isLoading, setIsLoading] = useState(true)
 
   // Check auth status when component mounts
   useEffect(() => {
     checkAuth()
-  })
+  }, [])
 
   const checkAuth = () => {
     try {
@@ -62,7 +61,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       }
     } catch (error) {
       console.error('Login error:', error)
-      return Promise.reject(error)
+      return 
     }
   }
 
